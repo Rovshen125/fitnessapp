@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Button } from "react-native";
 
@@ -65,7 +66,6 @@ export default function IntervalCalendar({ startDate = "2025-09-01", weeks = 8 }
           const key = `${currentYear}-${currentMonth + 1}-${day}`;
           const status = selectedDays[key];
           const clickable = isClickable(day);
-
           return (
             <TouchableOpacity
               key={day}
