@@ -1,6 +1,6 @@
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { HomeScreen, InfoScreen } from '../screens'
+import { HomeScreen, PlanScreen,ProfileScreen,SeachScreen, WorkOutScreen } from '../screens'
 import { NavigationContainer } from '@react-navigation/native'; // bunu əlavə et
 import TabBar from './TabBar';
 
@@ -13,8 +13,11 @@ export default function () {
             <Tab.Navigator
                 tabBar={(props)=><TabBar {...props} />}
             >
-                <Tab.Screen name='home' component={HomeScreen} />
-                <Tab.Screen name='info' component={InfoScreen} />
+                <Tab.Screen  name='home' component={HomeScreen} />
+                <Tab.Screen name='plan' component={PlanScreen} />
+                <Tab.Screen name='search' component={SeachScreen} />
+                <Tab.Screen name='work' component={WorkOutScreen} />
+                <Tab.Screen name='profile' component={ProfileScreen} />
             </Tab.Navigator>
         </NavigationContainer>
     )
