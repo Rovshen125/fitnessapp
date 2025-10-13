@@ -12,6 +12,7 @@ export default function () {
         <NavigationContainer>
             <Tab.Navigator
                 tabBar={(props)=><TabBar {...props} />}
+                screenOptions={{headerShown:false}}
             >
                 <Tab.Screen  name='home' component={HomeScreen} />
                 <Tab.Screen name='plan' component={PlanScreen} />

@@ -7,7 +7,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 const Search = ()=>{
     return(
-        <View className=' bg-[#9ac1fe] p-5 -mt-14' style={{borderRadius:'50%'}}>
+        <View className=' bg-[#9ac1fe] p-5 -mt-14' style={{borderRadius:50}}>
             <Ionicons color={'white'} size={42} name='search-outline' />
         </View>
     )

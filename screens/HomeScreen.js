@@ -1,11 +1,14 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import Calendar from '../components/Calendar'
+import HomeHeader from '../components/HomeHeader'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import HomeHesab from '../components/HomeHesab'
 
 export default function HomeScreen() {
   return(
-    <View>
-      <Text>Home Screen</Text>
-    </View>
+    <SafeAreaView>
+      <HomeHeader />
+      <HomeHesab />
+    </SafeAreaView>
   )
 }
