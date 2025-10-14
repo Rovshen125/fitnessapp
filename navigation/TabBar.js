@@ -20,6 +20,7 @@ export default function TabBar({ state, descriptors, navigation }) {
                 {
                     state.routes.map((route, index) => {
                         const isFocused = state.index === index
+                        
                         return (
                             <TouchableOpacity className='items-center' onPress={()=>navigation.navigate(route.name)} key={index} >
                                 {

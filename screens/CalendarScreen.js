@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 
-export default function Calendar() {
+export default function CalendarScreen() {
   const startDate = '2025-09-28'
   const choosenWeek = 32
   const start = new Date(startDate)
