@@ -14,12 +14,17 @@ const Search = ()=>{
 }
 
 export default function TabBar({ state, descriptors, navigation }) {
+     const currentRoute = state.routes[state.index];
+    if (currentRoute.name === 'plan') {
+        return null;
+    }
     return (
         <SafeAreaView>
             <View className='flex-row justify-center mx-2 gap-9'>
                 {
                     state.routes.map((route, index) => {
                         const isFocused = state.index === index
+                        
                         
                         return (
                             <TouchableOpacity className='items-center' onPress={()=>navigation.navigate(route.name)} key={index} >

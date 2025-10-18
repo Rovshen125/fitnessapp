@@ -2,7 +2,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { CalendarScreen, HomeScreen, PlanScreen, ProfileScreen, SeachScreen, WorkOutScreen } from '../screens'
+import {EtrafliScreen, CalendarScreen, HomeScreen, PlanScreen, ProfileScreen, SeachScreen, WorkOutScreen } from '../screens'
 import { NavigationContainer } from '@react-navigation/native'; // bunu əlavə et
 import TabBar from './TabBar';
 
@@ -27,9 +27,12 @@ export default function () {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator
+            screenOptions={{headerShown:false}}
+            >
                 <Stack.Screen name="Tabs" component={TabNav} />
                 <Stack.Screen name="calendar" component={CalendarScreen} />
+                <Stack.Screen name="etrafli" component={EtrafliScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

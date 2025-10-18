@@ -2,6 +2,8 @@ import { View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import PlanScroll from './PlanScroll';
+import PlanWorkOut from './PlanWorkOut';
 
 
 export default function PlanBody() {
@@ -10,7 +12,7 @@ export default function PlanBody() {
   const navigation = useNavigation()
 
   return (
-    <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+    <View>
       <View className='w-full  bg-white' style={{
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24
@@ -63,7 +65,16 @@ export default function PlanBody() {
 
 
         {/* calendar and difficulity end */}
+
+
+        {/* Scroll horizontal menu */}
+        <PlanScroll />
+        {/* Scroll horizontal menu  end*/}
+
+        {/* Plan work outs */}
+        <PlanWorkOut />
+        {/* Plan work out ended */}
       </View>
-    </ScrollView>
+    </View>
   )
 }

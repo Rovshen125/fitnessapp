@@ -5,7 +5,7 @@ import PlanScreen from "./PlanScreen";
 import SeachScreen from "./SeachScreen";
 import ProfileScreen from "./ProfileScreen";
 import CalendarScreen from "./CalendarScreen";
+import EtrafliScreen from "./EtrafliScreen";
 
 
-
-export {CalendarScreen,HomeScreen, InfoScreen, WorkOutScreen, PlanScreen, SeachScreen,ProfileScreen}
+export {EtrafliScreen, CalendarScreen,HomeScreen, InfoScreen, WorkOutScreen, PlanScreen, SeachScreen,ProfileScreen}
